@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_card_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white2gray_sel"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_listview_item_top" />
+
+    <TextView
+        android:id="@+id/weibo_content"
+        style="@style/TextViewBody"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:text="这是微博内容。。。。。" />
+
+    <include
+        android:id="@+id/include_listview_item_image"
+        layout="@layout/include_listview_item_image"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/include_listview_item_bottombar"
+        layout="@layout/include_listview_item_bottombar" />
+
+</LinearLayout>

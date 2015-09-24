@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccffcc" >
+
+    <ImageView
+        android:id="@+id/login_head_img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="40dp" />
+
+
+    <EditText
+        android:id="@+id/login_et1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_head_img"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_et1_shap"
+        android:focusable="true"
+        android:hint="You Name:" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/login_et2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_et1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_et2_shap"
+        android:hint="Password:"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/login_et2"
+        android:layout_below="@+id/login_et2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_btn1_select"
+        android:text="Sign in"
+        android:textColor="#a2a0a0"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_btn"
+        android:layout_below="@+id/login_btn"
+        android:layout_marginTop="20dp"
+        android:text="记住密码"
+        android:textColor="#666666" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_alignRight="@+id/login_btn"
+        android:background="@drawable/register_btn_select"
+        android:text="Register"
+        android:textColor="#a2a0a0" />
+
+    <ProgressBar
+        android:id="@+id/login_pb"
+        style="@style/MYProgressBarStyle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/login_et2"
+        android:layout_alignRight="@+id/login_et2"
+        android:indeterminateDuration="500" />
+
+</RelativeLayout>

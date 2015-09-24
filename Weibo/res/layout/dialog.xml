@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    android:background="@drawable/dialog_shap" >
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true" >
+
+        <Button
+            android:id="@+id/dialog_btn1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/camera" />
+
+        <Button
+            android:id="@+id/dialog_btn2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBaseline="@+id/dialog_btn1"
+            android:layout_alignBottom="@+id/dialog_btn1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/more_icon_photo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dialog_btn2"
+            android:layout_marginRight="15dp"
+            android:text="相册"
+            android:textColor="#a2a0a0" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/dialog_btn1"
+            android:layout_marginLeft="15dp"
+            android:text="相机"
+            android:textColor="#a2a0a0" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

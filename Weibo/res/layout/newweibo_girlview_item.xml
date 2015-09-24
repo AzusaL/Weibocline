@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/newweibo_itemImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/newweibo_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/newweibo_itemImage"
+        android:layout_margin="4dp"
+        android:background="@drawable/delete_btn" />
+
+</RelativeLayout>

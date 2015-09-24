@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/showimg_title"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/showimg_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="最近图片 "
+            android:textColor="#a2a0a0"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/cancle_btn"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/sign_up_select"
+            android:text="取消"
+            android:textColor="#a2a0a0" />
+
+        <Button
+            android:id="@+id/sure_btn"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/sign_up_select"
+            android:text="确定"
+            android:textColor="#a2a0a0" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.05dp"
+        android:layout_below="@id/showimg_title"
+        android:background="#a2a0a0" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/showimg_title"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp" >
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/lv_item_headimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_head_" />
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.23"
+        android:paddingLeft="16dp" >
+
+        <TextView
+            android:id="@+id/lv_item_name"
+            style="@style/TextViewSubhead"
+            android:text="AzusaL" />
+
+        <TextView
+            android:id="@+id/lv_item_timetv"
+            style="@style/TextViewCaption"
+            android:layout_alignParentBottom="true"
+            android:text="12:00"
+            android:textColor="#a2a0a0" />
+
+        <Button
+            android:id="@+id/lv_item_downbtn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/down_icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>
