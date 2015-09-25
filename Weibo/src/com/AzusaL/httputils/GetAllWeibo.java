@@ -12,8 +12,6 @@ import com.AzusaL.bean.WeiboBean;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import android.util.Log;
-
 public class GetAllWeibo {
 	private static String urlpath = "http://azusal.tunnel.mobi/Weibo/servlet/GetWeibo";
 

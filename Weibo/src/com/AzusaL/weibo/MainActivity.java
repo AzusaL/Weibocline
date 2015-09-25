@@ -3,6 +3,10 @@ package com.AzusaL.weibo;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.AzusaL.fragment.MainFragment;
+import com.AzusaL.fragment.MeFragment;
+import com.AzusaL.fragment.NewWeiboActivity;
+import com.AzusaL.fragment.NewsFragment;
 import com.example.weibo.R;
 
 import android.app.Activity;
@@ -15,7 +19,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnClickListener {
 	private Button main_btn, news_btn, search_btn, me_btn, add_btn;
